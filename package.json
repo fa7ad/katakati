@@ -1,15 +1,13 @@
 {
-  "name": "KataKati",
+  "name": "katakati",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "react-native start",
-    "ios": "concurrently 'npm:ios:js' 'npm:ios:re'",
-    "android": "concurrently 'npm:android:js' 'npm:android:re'",
-    "android:js": "react-native run-android",
-    "android:re": "bsb -clean-world -make-world -w",
-    "ios:js": "react-native run-ios",
-    "ios:re": "bsb -clean-world -make-world -w",
+    "develop": "yarn reason & yarn start",
+    "reason": "bsb -clean-world -make-world -w",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
     "test": "jest"
   },
   "dependencies": {
@@ -24,7 +22,6 @@
     "@react-native-community/eslint-config": "^2.0.0",
     "babel-jest": "^26.1.0",
     "bs-platform": "^8.0.3",
-    "concurrently": "^5.2.0",
     "eslint": "^7.4.0",
     "jest": "^26.1.0",
     "metro-react-native-babel-preset": "^0.60.0",

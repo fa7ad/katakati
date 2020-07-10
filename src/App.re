@@ -79,20 +79,26 @@ let styles =
     })
   );
 
+module Internals = {
+  [@bs.scope "global"] [@bs.val]
+  external hermesInternal: option(Js.t('a)) = "HermesInternal";
+};
+
 [@react.component]
-let app = () =>
+let app = () => {
+  let isHermes = Internals.hermesInternal != None;
   <>
-    <StatusBar barStyle=`darkContent />
+    <StatusBar barStyle=`lightContent />
     <SafeAreaView>
       <ScrollView
         contentInsetAdjustmentBehavior=`automatic style={styles##scrollView}>
-        {Global.hermesInternal->Belt.Option.isNone
-           ? React.null
-           : <View style=styles##engine>
+        {isHermes
+           ? <View style=styles##engine>
                <Text style=styles##footer>
                  "Engine: Hermes"->React.string
                </Text>
-             </View>}
+             </View>
+           : <Text> "Not hermes"->React.string </Text>}
         <Header />
         <View style={styles##body}>
           <View style={styles##sectionContainer}>
@@ -169,3 +175,4 @@ let app = () =>
       </ScrollView>
     </SafeAreaView>
   </>;
+};
