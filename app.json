@@ -1,4 +1,12 @@
 {
   "name": "KataKati",
-  "displayName": "KataKati"
+  "displayName": "KataKati",
+  "expo": {
+    "name": "KataKati",
+    "slug": "KataKati",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
 }
