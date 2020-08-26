@@ -1,24 +1,19 @@
-open ReactNative;
+open ReactNavigation;
 
-let styles =
-  Style.(
-    StyleSheet.create({
-      "container":
-        viewStyle(
-          ~flex=1.0,
-          ~backgroundColor="#000",
-          ~alignItems=`center,
-          ~justifyContent=`flexStart,
-          (),
-        ),
-      "text": textStyle(~color="#fff", ~fontSize=18.0, ()),
-    })
-  );
+module NavigationContainer = {
+  [@bs.module "@react-navigation/native"] [@react.component]
+  external make: (~children: React.element) => React.element = "NavigationContainer";
+};
+
+include Stack.Make({
+  type params = unit;
+});
 
 [@react.component]
 let make = () => {
-  <SafeAreaView style=styles##container>
-    <ExpoStatusBar style="light" translucent=false backgroundColor="#000" />
-    <Text style=styles##text> "Hello, Reasonable App!"->React.string </Text>
-  </SafeAreaView>;
+  <NavigationContainer>
+    <Navigator mode=`modal>
+      <Screen name="Home" component=HomeScreen.make />
+    </Navigator>
+  </NavigationContainer>
 };

@@ -7,6 +7,8 @@ S /Users/fahad/Documents/mine/KataKati/node_modules/reason-react/lib/ocaml
 B /Users/fahad/Documents/mine/KataKati/node_modules/reason-react/lib/ocaml
 S /Users/fahad/Documents/mine/KataKati/node_modules/reason-react-native/lib/ocaml
 B /Users/fahad/Documents/mine/KataKati/node_modules/reason-react-native/lib/ocaml
+S /Users/fahad/Documents/mine/KataKati/node_modules/reason-react-navigation/lib/ocaml
+B /Users/fahad/Documents/mine/KataKati/node_modules/reason-react-navigation/lib/ocaml
 S src
 B lib/bs/src
 S src/lib

@@ -9,24 +9,33 @@
     "android:dev": "yarn reason & yarn start"
   },
   "dependencies": {
-    "expo": "^37.0.0",
-    "expo-splash-screen": "~0.3.1",
+    "@react-native-community/masked-view": "0.1.10",
+    "@react-navigation/bottom-tabs": "^5.8.0",
+    "@react-navigation/drawer": "^5.9.0",
+    "@react-navigation/material-bottom-tabs": "^5.2.16",
+    "@react-navigation/material-top-tabs": "^5.2.16",
+    "@react-navigation/native": "^5.7.3",
+    "@react-navigation/stack": "^5.9.0",
+    "expo": "^38.0.9",
+    "expo-splash-screen": "^0.5.0",
     "expo-status-bar": "^1.0.0",
-    "expo-updates": "~0.2.10",
-    "react": "~16.11.0",
-    "react-dom": "~16.11.0",
-    "react-native": "^0.61.0",
-    "react-native-gesture-handler": "~1.6.1",
+    "expo-updates": "^0.2.14",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-native": "^0.63.2",
+    "react-native-gesture-handler": "~1.6.0",
     "react-native-reanimated": "~1.9.0",
+    "react-native-safe-area-context": "~3.0.7",
     "react-native-screens": "~2.9.0",
     "react-native-unimodules": "~0.10.1",
-    "react-native-web": "~0.11.7",
-    "reason-react": "^0.7.0",
-    "reason-react-native": "^0.61.1"
+    "react-native-web": "^0.13.8",
+    "reason-react": "^0.9.1",
+    "reason-react-native": "^0.62.3",
+    "reason-react-navigation": "5.0.0"
   },
   "devDependencies": {
-    "@babel/core": "~7.9.0",
-    "bs-platform": "^8.0.3"
+    "@babel/core": "^7.11.1",
+    "bs-platform": "^8.2.0"
   },
   "private": true
 }
