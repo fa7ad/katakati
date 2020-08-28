@@ -11,6 +11,8 @@ S /Users/fahad/Documents/mine/KataKati/node_modules/reason-react-navigation/lib/
 B /Users/fahad/Documents/mine/KataKati/node_modules/reason-react-navigation/lib/ocaml
 S src
 B lib/bs/src
+S src/helpers
+B lib/bs/src/helpers
 S src/lib
 B lib/bs/src/lib
 ####BSB GENERATED: NO EDIT}

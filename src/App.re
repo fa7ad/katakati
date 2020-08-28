@@ -2,7 +2,8 @@ open ReactNavigation;
 
 module NavigationContainer = {
   [@bs.module "@react-navigation/native"] [@react.component]
-  external make: (~children: React.element) => React.element = "NavigationContainer";
+  external make: (~children: React.element) => React.element =
+    "NavigationContainer";
 };
 
 include Stack.Make({
@@ -12,8 +13,13 @@ include Stack.Make({
 [@react.component]
 let make = () => {
   <NavigationContainer>
-    <Navigator mode=`modal>
-      <Screen name="Home" component=HomeScreen.make />
+    <ExpoStatusBar translucent=false backgroundColor=UI.Colors.background />
+    <Navigator>
+      <Screen
+        name="KataKati"
+        component=HomeScreen.make
+        options={_ => options(~headerShown=false, ())}
+      />
     </Navigator>
-  </NavigationContainer>
+  </NavigationContainer>;
 };
