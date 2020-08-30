@@ -13,9 +13,5 @@ include Stack.Make({
 let make = () =>
   <NavigationContainer>
     <ExpoStatusBar translucent=false backgroundColor=UI.Colors.background />
-    <Navigator>
-      <Screen
-        name="KataKati" component=HomeScreen.make options={_ => options(~headerShown=false, ())}
-      />
-    </Navigator>
+    <Navigator headerMode=#none> <Screen name="KataKati" component=HomeScreen.make /> </Navigator>
   </NavigationContainer>
