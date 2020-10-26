@@ -3,3 +3,5 @@
 *.rei linguist-language=Reason
 *.res linguist-language=Reason
 *.resi linguist-language=Reason
+*.java linguist-language=Text
+*.rb linguist-language=Text
