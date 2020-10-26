@@ -5,3 +5,6 @@
 *.resi linguist-language=Reason
 *.java linguist-language=Text
 *.rb linguist-language=Text
+Podfile linguist-language=Text
+*.h linguist-language=Text
+*.m linguist-language=Text
